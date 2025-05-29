@@ -146,7 +146,7 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      Hi! I'm Raj Kanojiya, a passionate learner from Jaunpur, currently pursuing my Bachelor of Arts from Up Board. After completing my 12th standard, I started exploring programming and quickly became fascinated by coding and software development.
+      Hi! I'm Raj Kanojiya, a passionate learner from Jaunpur, currently pursuing my Bachelor of Arts from UP Board. After completing my 12th standard, I started exploring programming and quickly became fascinated by coding and software development.
     </p>
     <p>
       Currently, I am focusing on learning Python, web development (HTML, CSS, JavaScript), and building practical projects that help me sharpen my skills and deepen my understanding.
@@ -157,13 +157,12 @@
     <p>
       My goal is to become a skilled full-stack developer and contribute to meaningful projects in the tech community. I am eager to learn, collaborate, and grow through internships and real-world experiences.
     </p>
-  </section>  
-
+  </section>
 
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Python </li>
+      <li>Python</li>
       <li>HTML & CSS</li>
       <li>JavaScript (Basic)</li>
       <li>Git & GitHub</li>
@@ -183,8 +182,8 @@
     <h2>Education</h2>
     <ul>
       <li><strong>B.A.</strong> – Pursuing From UP Board (2025–Present)</li>
-      <li><strong>12th</strong> – Complete from CBSE (2025)</li>
-      <li><strong>10th</strong> – Complete from CBSE (2023)</li>
+      <li><strong>12th</strong> – Completed from CBSE (2025)</li>
+      <li><strong>10th</strong> – Completed from CBSE (2023)</li>
     </ul>
   </section>
 
@@ -193,12 +192,36 @@
     <p><strong>Email:</strong> rajkanojiya725@gmail.com</p>
     <p><strong>Phone:</strong> +91 6306213750</p>
     <p><strong>Location:</strong> Jaunpur, Uttar Pradesh</p>
-    <a href="CHANDRAKANT KANOJIYA.pdf" class="btn" download>Download Resume</a>
+    <a href="CHANDRAKANT KANOJIYA.pdf" class="btn" target="_blank">View Resume</a>
   </section>
 
   <footer>
     &copy; 2025 Raj Kanojiya. All rights reserved.
   </footer>
+
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Block screenshot and dev tools shortcuts
+    document.addEventListener('keydown', function(e) {
+      if (
+        e.ctrlKey && (e.key === 'p' || e.key === 's' || e.key === 'u' || e.key === 'Shift') ||
+        e.key === 'PrintScreen' || e.key === 'F12'
+      ) {
+        e.preventDefault();
+        alert("Screenshot and shortcuts are disabled on this page.");
+      }
+    });
+
+    // Try to clear clipboard on PrintScreen
+    window.addEventListener("keyup", function(e) {
+      if (e.key === "PrintScreen") {
+        navigator.clipboard.writeText("");
+        alert("Screenshots are disabled.");
+      }
+    });
+  </script>
 
 </body>
 </html>
