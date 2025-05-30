@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raj Kanojiya | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #00bcd4;
+      --bg-color: #ffffff;
+      --text-color: #2c3e50;
+      --card-bg: #ffffff;
+      --light-gray: #f5f7fa;
+    }
+
+    [data-theme="dark"] {
+      --primary-color: #00acc1;
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --card-bg: #1e1e1e;
+      --light-gray: #1c1c1c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light-gray);
+      color: var(--text-color);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #e0f7fa;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    nav {
+      background: var(--bg-color);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      gap: 30px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 600;
+      transition: color 0.3s;
+      padding: 8px 12px;
+      white-space: nowrap;
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    nav::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 4px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: var(--card-bg);
+      margin-top: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.03);
+    }
+
+    h2 {
+      font-size: 1.8em;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 10px;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0192a5;
+    }
+
+    .contact-info {
+      margin-bottom: 20px;
+    }
+
+    .resume-button-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+
+      section {
+        margin: 20px;
+        padding: 40px 20px;
+      }
+
+      .resume-button-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  
+  <header>
+    <h1>Raj Kanojiya</h1>
+    <p>Aspiring Programmer | B.A. Student | Gamer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Raj Kanojiya, a passionate learner from Jaunpur, currently pursuing my Bachelor of Arts from UP Board. After completing my 12th standard, I started exploring programming and quickly became fascinated by coding and software development.
+    </p>
+    <p>
+      Currently, I am focusing on learning Python, web development (HTML, CSS, JavaScript), and building practical projects that help me sharpen my skills and deepen my understanding.
+    </p>
+    <p>
+      Apart from coding, I enjoy gaming, especially team-based strategy games, which have helped me improve my teamwork and problem-solving abilities. I am also active on GitHub, where I track my coding progress and collaborate with others.
+    </p>
+    <p>
+      My goal is to become a skilled full-stack developer and contribute to meaningful projects in the tech community. I am eager to learn, collaborate, and grow through internships and real-world experiences.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>HTML & CSS</li>
+      <li>JavaScript (Basic)</li>
+      <li>Git & GitHub</li>
+      <li>Team Collaboration</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Personal Portfolio</h3>
+      <p>This responsive portfolio website showcasing my profile and skills.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.A.</strong> – Pursuing From UP Board (2025–Present)</li>
+      <li><strong>12th</strong> – Completed From CBSE (2025)</li>
+      <li><strong>10th</strong> – Completed From CBSE (2023)</li>
+      <li><strong>ADCA</strong> – Completed in 2024</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> rajkanojiya725@gmail.com</p>
+      <p><strong>Phone:</strong> +91 6306213750</p>
+      <p><strong>Location:</strong> Jaunpur, Uttar Pradesh</p>
+    </div>
+    <div class="resume-button-wrapper">
+      <a href="CHANDRAKANT KANOJIYA.pdf" class="btn" target="_blank">View Resume</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Raj Kanojiya. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
+    }
+  </script>
+</body>
+</html>
